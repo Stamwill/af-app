@@ -1,12 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import * as api from 'api/mock'
+import Banner from 'components/Banner'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <h1>test</h1>
+      <Banner menu={api.menuPrimary} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
