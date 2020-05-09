@@ -60,5 +60,13 @@ export const cardPage = {
       title: 'The cycle of life',
       text: 'We need to find our own footprints, even bigfoots',
     },
+    {
+      image: {
+        src: '',
+        alt: '',
+      },
+      title: 'From the outdoors',
+      text: 'So how does a backpack actually come about? We asked William',
+    },
   ],
 }
