@@ -1,6 +1,6 @@
 .Banner {
   position: relative;
-  height: 60vh;
+  height: 70vh;
   width: 100vw;
   max-width: 100%;
   display: flex;
@@ -12,6 +12,7 @@
 .Banner Button {
   position: center;
   cursor: pointer;
+  font-size: 1vw;
   padding: 2vw;
   border-radius: 25px;
   transition: 0.5s;
