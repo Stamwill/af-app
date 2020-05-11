@@ -1,16 +1,19 @@
-import React from 'react'
+import * as React from 'react'
 import PropTypes from 'prop-types'
 import { cardType } from 'utils'
-import './Gallery.css'
+import classes from './Gallery.module.css'
 
 function Gallery(props) {
   const { cards } = props
+
   return (
-    <div className="Gallery">
+    <div className={classes.root}>
       {cards.map((card, idx) => (
-        <div key={idx} className="Gallery-Card">
-          <img src="//source.unsplash.com/407x270?hiking" alt={card.alt} />
-          <h1 className="Gallery-Card-Header">{card.title}</h1>
+        <div className={classes.galleryCard} key={idx}>
+          <img className={classes.galleryImg} src="//source.unsplash.com/407x270?hiking" alt="" />
+
+          <h2 className={classes.heading}>{card.title}</h2>
+
           <p>{card.text}</p>
         </div>
       ))}
