@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 22vw;
+  margin: 2vw 0.5vw;
+  background-color: white;
+}
+
+.img {
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.articleInfo {
+  display: flex;
+  align-items: baseline;
+}
+
+.category {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+.readTime {
+  margin-left: 0.5vw;
+}
+
+.heading {
+  padding: 0.2vw 0.5vw;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.paragraph {
+  padding: 0.2vw 0.5vw;
+  margin-top: 0;
+  font-size: 1vw;
+}
