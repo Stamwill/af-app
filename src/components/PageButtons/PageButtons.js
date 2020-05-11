@@ -4,48 +4,10 @@ import classnames from 'clsx'
 // import { linkType } from 'utils'
 import classes from './PageButtons.module.css'
 
-const buttons = [
-  {
-    label: '1',
-    url: '#',
-  },
-  {
-    label: '2',
-    url: '#',
-  },
-  {
-    label: '3',
-    url: '#',
-  },
-  {
-    label: '4',
-    url: '#',
-  },
-  {
-    label: '5',
-    url: '#',
-  },
-  {
-    label: '6',
-    url: '#',
-  },
-  {
-    label: '7',
-    url: '#',
-  },
-  {
-    label: '8',
-    url: '#',
-  },
-  {
-    label: '9',
-    url: '#',
-  },
-  {
-    label: '10',
-    url: '#',
-  },
-]
+const buttons = Array.from(new Array(9), (_, idx) => ({
+  label: idx + 1,
+  url: '#',
+}))
 
 const PageButtons = React.forwardRef(function PageButtons(props, ref) {
   const { className, ...other } = props
