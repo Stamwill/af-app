@@ -9,12 +9,12 @@ function Gallery(props) {
   return (
     <div className={classes.root}>
       {cards.map((card, idx) => (
-        <div className={classes.galleryCard} key={idx}>
-          <img className={classes.galleryImg} src="//source.unsplash.com/407x270?hiking" alt="" />
+        <div className={classes.card} key={idx}>
+          <img className={classes.img} src="//source.unsplash.com/407x270?hiking" alt="" />
 
           <h2 className={classes.heading}>{card.title}</h2>
 
-          <p>{card.text}</p>
+          <p className={classes.paragraph}>{card.text}</p>
         </div>
       ))}
     </div>
