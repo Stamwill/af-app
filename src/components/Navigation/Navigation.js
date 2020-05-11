@@ -1,15 +1,16 @@
-import React from 'react'
-import Button from '@material-ui/core/Button'
+import * as React from 'react'
 import PropTypes from 'prop-types'
+import classes from './Navigation.module.css'
 
 function Navigation(props) {
   const { menu } = props
+
   return (
     <div>
       {menu.map((menu, idx) => (
-        <Button type="button" key={idx} url={menu.url}>
+        <button className={classes.navButton} type="button" key={idx} url={menu.url}>
           {menu.label}
-        </Button>
+        </button>
       ))}
     </div>
   )
