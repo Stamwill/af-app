@@ -1,28 +1,26 @@
 import * as React from 'react'
+import classnames from 'clsx'
 import PropTypes from 'prop-types'
+import { linkType } from 'utils'
 import classes from './Navigation.module.css'
 
-function Navigation(props) {
-  const { menu } = props
+const Navigation = React.forwardRef(function Navigation(props, ref) {
+  const { menus, className, ...other } = props
 
   return (
-    <div>
-      {menu.map((menu, idx) => (
+    <div className={classnames(classes.root, className)} ref={ref} {...other}>
+      {menus.map((menu, idx) => (
         <button className={classes.navButton} type="button" key={idx} url={menu.url}>
           {menu.label}
         </button>
       ))}
     </div>
   )
-}
+})
 
 Navigation.propTypes = {
-  menu: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string,
-      url: PropTypes.string,
-    }),
-  ),
+  menus: PropTypes.arrayOf(linkType).isRequired,
+  className: PropTypes.string,
 }
 
 export default Navigation
