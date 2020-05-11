@@ -70,3 +70,46 @@ export const cardPage = {
     },
   ],
 }
+
+export const galleryNumber = [
+  {
+    label: '1',
+    url: '#',
+  },
+  {
+    label: '2',
+    url: '#',
+  },
+  {
+    label: '3',
+    url: '#',
+  },
+  {
+    label: '4',
+    url: '#',
+  },
+  {
+    label: '5',
+    url: '#',
+  },
+  {
+    label: '6',
+    url: '#',
+  },
+  {
+    label: '7',
+    url: '#',
+  },
+  {
+    label: '8',
+    url: '#',
+  },
+  {
+    label: '9',
+    url: '#',
+  },
+  {
+    label: '10',
+    url: '#',
+  },
+]
