@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  justify-content: row;
+  margin-top: 1vw;
+}
+
+.logo {
+  width: 1.5vw;
+  margin-right: 1vw;
+}
+
+.span {
+  height: 5vw;
+}
+
+.search {
+  align-items: center;
+  text-decoration: none;
+}
