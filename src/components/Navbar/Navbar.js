@@ -10,8 +10,8 @@ const Navbar = React.forwardRef(function Navbar(props, ref) {
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <div>
-        <img className={classes.image} src="//source.unsplash.com/40x50?bear" alt="" />
+      <div className={classes.image}>
+        <img src="//source.unsplash.com/40x50?bear" alt="" />
       </div>
 
       <div>

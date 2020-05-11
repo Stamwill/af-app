@@ -9,14 +9,19 @@
   align-items: baseline;
 }
 
+.image {
+  align-self: center;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
 .heading {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   font-weight: 900;
 }
 
 .line {
   border: 1px solid black;
-  height: 1.5vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
+  height: 1vw;
+  margin: 1vw 1vw;
 }
