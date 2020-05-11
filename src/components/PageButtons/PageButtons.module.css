@@ -1,27 +1,29 @@
 .root {
   display: flex;
   justify-content: center;
-  margin-top: 1.5vw;
+  margin-top: 0.5vw;
 }
 
 .button {
-  position: center;
+  justify-content: center;
   cursor: pointer;
-  font-size: 0.9vw;
+  font-size: 0.6vw;
   font-weight: 600;
-  margin: 0.5vw;
-  border: 0;
+  height: 1.3vw;
+  width: 1.3vw;
+  margin: 0.3vw;
+  border: 0px;
   border-radius: 100%;
   transition: 0.5s;
-  outline: none;
+  background-color: white;
 }
 
 .button:hover {
   background-color: #d90000;
+  color: white;
 }
 
 .switchPage {
   display: flex;
-  align-self: flex-end;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
