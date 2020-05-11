@@ -17,13 +17,15 @@ export const menuPrimary = [
   },
 ]
 
-export const cardPage = {
-  cards: [
+export const startPage = {
+  articles: [
     {
       image: {
         src: '',
         alt: '',
       },
+      category: 'Products',
+      readTime: '2 Minutes read',
       title: 'How to find the perfect trekking trousers',
       text:
         'Why are there so many models? The answer is as simple as it is obvious: We’re all different.',
@@ -33,14 +35,18 @@ export const cardPage = {
         src: '',
         alt: '',
       },
+      category: 'Products',
+      readTime: '5 Minutes read',
       title: 'From the outdoors',
-      text: 'So how does a backpack actually come about? We asked William',
+      text: 'So how does a backpack actually come category? We asked William',
     },
     {
       image: {
         src: '',
         alt: '',
       },
+      category: 'Nature',
+      readTime: '10 Minutes read',
       title: '10 things to do today',
       text: 'why wait just do it now!',
     },
@@ -49,6 +55,8 @@ export const cardPage = {
         src: '',
         alt: '',
       },
+      category: 'Guide',
+      readTime: '5 Minutes read',
       title: 'The importance of leaving a trace',
       text: 'Protect wildlife, stop fired, leave a trace right now!',
     },
@@ -57,6 +65,8 @@ export const cardPage = {
         src: '',
         alt: '',
       },
+      category: 'Guides',
+      readTime: '6 Minutes read',
       title: 'The cycle of life',
       text: 'We need to find our own footprints, even bigfoots',
     },
@@ -65,51 +75,10 @@ export const cardPage = {
         src: '',
         alt: '',
       },
+      category: 'Products',
+      readTime: '5 Minutes read',
       title: 'From the outdoors',
       text: 'So how does a backpack actually come about? We asked William',
     },
   ],
 }
-
-export const galleryNumber = [
-  {
-    label: '1',
-    url: '#',
-  },
-  {
-    label: '2',
-    url: '#',
-  },
-  {
-    label: '3',
-    url: '#',
-  },
-  {
-    label: '4',
-    url: '#',
-  },
-  {
-    label: '5',
-    url: '#',
-  },
-  {
-    label: '6',
-    url: '#',
-  },
-  {
-    label: '7',
-    url: '#',
-  },
-  {
-    label: '8',
-    url: '#',
-  },
-  {
-    label: '9',
-    url: '#',
-  },
-  {
-    label: '10',
-    url: '#',
-  },
-]
