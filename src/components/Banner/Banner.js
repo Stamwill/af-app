@@ -11,6 +11,7 @@ function Banner(props) {
 
       <img className={classes.background} src="//source.unsplash.com/1080x715?hiking" alt="" />
       <Navigation menu={menu} />
+      <div></div>
     </div>
   )
 }
