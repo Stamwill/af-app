@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.galleryCard {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin: 2vw;
+  background-color: white;
+}
+
+.galleryImg {
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.galleryImg:hover {
+  transform: scale(1.1);
+}
+
+.galleryCard p {
+  margin-top: 0;
+  font-size: 1vw;
+}
