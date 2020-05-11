@@ -1,9 +1,8 @@
 import React from 'react'
 import * as api from 'api/mock'
+import Home from 'pages/Home'
 import Navbar from 'components/Navbar'
 import Banner from 'components/Banner'
-import Gallery from 'components/Gallery'
-import PageButtons from 'components/PageButtons'
 import './App.css'
 
 function App() {
@@ -11,8 +10,7 @@ function App() {
     <div className="App">
       <Navbar menu={api.menuPrimary} />
       <Banner menu={api.menuPrimary} />
-      <PageButtons buttons={api.galleryNumber} />
-      <Gallery {...api.cardPage} />
+      <Home {...api.startPage} />
     </div>
   )
 }
