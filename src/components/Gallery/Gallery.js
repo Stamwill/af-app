@@ -23,7 +23,6 @@ function Gallery(props) {
 
 Gallery.propTypes = {
   cards: PropTypes.arrayOf(cardType),
-  text: PropTypes.string,
 }
 
 export default Gallery

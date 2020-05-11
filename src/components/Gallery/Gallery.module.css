@@ -27,3 +27,17 @@
   margin-top: 0;
   font-size: 1vw;
 }
+
+@media screen and (max-width: 960) {
+  .root {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .galleryCard {
+    width: 100%;
+  }
+  .galleryImg {
+    width: 100%;
+  }
+}
