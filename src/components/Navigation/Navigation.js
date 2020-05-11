@@ -10,7 +10,7 @@ const Navigation = React.forwardRef(function Navigation(props, ref) {
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
       {menus.map((menu, idx) => (
-        <button className={classes.navButton} type="button" key={idx} url={menu.url}>
+        <button className={classes.button} type="button" key={idx} url={menu.url}>
           {menu.label}
         </button>
       ))}

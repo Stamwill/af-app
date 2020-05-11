@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.navButton {
+.button {
   position: center;
   cursor: pointer;
   font-size: 0.9vw;
@@ -15,6 +15,6 @@
   outline: none;
 }
 
-.navButton:hover {
+.button:hover {
   background-color: #d90000;
 }
