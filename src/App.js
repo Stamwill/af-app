@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar menu={api.menuPrimary} />
-      <Banner menu={api.menuPrimary} />
+      <Banner menus={api.menuPrimary} />
       <Home {...api.startPage} />
     </div>
   )
