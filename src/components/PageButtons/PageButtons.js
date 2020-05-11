@@ -18,6 +18,12 @@ const PageButtons = React.forwardRef(function PageButtons(props, ref) {
           {button.label}
         </button>
       ))}
+
+      <div className={classes.switchPage}>
+        <p>Previous</p>
+        <span />
+        <p>Next</p>
+      </div>
     </div>
   )
 })
