@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+}
+
+.heading {
+  font-size: 1.5vw;
+  font-weight: 900;
+}
+
+.line {
+  border: 1px solid black;
+  height: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
