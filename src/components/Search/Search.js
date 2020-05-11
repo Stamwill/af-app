@@ -1,10 +1,14 @@
 import * as React from 'react'
+import classnames from 'clsx'
+import PropTypes from 'prop-types'
 import classes from './Search.module.css'
 import logo from './searchLogo.png'
 
-function Search() {
+const Search = React.forwardRef(function Search(props, ref) {
+  const { className, ...other } = props
+
   return (
-    <div className={classes.root}>
+    <div className={classnames(classes.root, className)} ref={ref} {...other}>
       <a className={classes.search} href="/">
         <div>
           <img className={classes.logo} src={logo} alt="" />
@@ -13,6 +17,10 @@ function Search() {
       </a>
     </div>
   )
+})
+
+Search.propTypes = {
+  className: PropTypes.string,
 }
 
 export default Search
