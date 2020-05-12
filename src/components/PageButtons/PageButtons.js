@@ -13,7 +13,7 @@ const PageButtons = React.forwardRef(function PageButtons(props, ref) {
   const { className, ...other } = props
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <div>
+      <div className={classes.pageButton}>
         {buttons.map((button, idx) => (
           <button key={idx} className={classes.button} type="button" href={button.url}>
             {button.label}
@@ -23,7 +23,6 @@ const PageButtons = React.forwardRef(function PageButtons(props, ref) {
 
       <div className={classes.switchPage}>
         <p>Previous</p>
-        <span />
         <p>Next</p>
       </div>
     </div>
