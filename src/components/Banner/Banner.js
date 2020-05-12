@@ -10,7 +10,7 @@ const Banner = React.forwardRef(function Banner(props, ref) {
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <h1 className={classes.heading}>Martin tittar, se upptagna ut</h1>
+      <h1 className={classes.heading}>Power of the Bear</h1>
 
       <img className={classes.background} src="//source.unsplash.com/1080x715?hiking" alt="" />
       <Navigation menus={menus} />
