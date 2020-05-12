@@ -12,7 +12,7 @@ function App() {
       <Navbar menus={api.menuPrimary} />
       <Banner menus={api.menuPrimary} />
       <Home {...api.startPage} />
-      <Footer />
+      <Footer menus={api.menuPrimary} />
     </div>
   )
 }
