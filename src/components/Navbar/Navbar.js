@@ -1,13 +1,14 @@
 import * as React from 'react'
 import classnames from 'clsx'
 import PropTypes from 'prop-types'
+import { menuLinkType } from 'utils'
 import Search from 'components/Search'
 import Hamburger from 'components/Hamburger'
 import classes from './Navbar.module.css'
 
 const Navbar = React.forwardRef(function Navbar(props, ref) {
-  const { className, ...other } = props
-
+  const { menus, className, ...other } = props
+  console.log('navbar', menus)
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
       <div className={classes.image}>
@@ -21,13 +22,14 @@ const Navbar = React.forwardRef(function Navbar(props, ref) {
       <div className={classes.container}>
         <Search />
         <span className={classes.line} />
-        <Hamburger />
+        <Hamburger menus={menus} />
       </div>
     </div>
   )
 })
 
 Navbar.propTypes = {
+  menus: PropTypes.arrayOf(menuLinkType).isRequired,
   className: PropTypes.string,
 }
 
