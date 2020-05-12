@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import classnames from 'clsx'
+import { menuLinkType } from 'utils'
 import Navigation from 'components/Navigation'
 import classes from './Banner.module.css'
 
@@ -18,7 +19,7 @@ const Banner = React.forwardRef(function Banner(props, ref) {
 })
 
 Banner.propTypes = {
-  menus: PropTypes.string,
+  menus: PropTypes.arrayOf(menuLinkType).isRequired,
   className: PropTypes.string,
 }
 
