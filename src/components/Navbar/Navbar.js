@@ -8,7 +8,7 @@ import classes from './Navbar.module.css'
 
 const Navbar = React.forwardRef(function Navbar(props, ref) {
   const { menus, className, ...other } = props
-  console.log('navbar', menus)
+
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
       <div className={classes.image}>
