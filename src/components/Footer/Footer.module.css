@@ -24,8 +24,16 @@
   max-width: 20vw;
 }
 
+.menu:hover {
+  color: #d90000;
+}
+
 .shop {
   flex-direction: row;
+}
+
+.shop:hover {
+  color: #d90000;
 }
 
 .test {

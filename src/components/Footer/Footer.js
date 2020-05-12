@@ -34,10 +34,13 @@ const Footer = React.forwardRef(function Footer(props, ref) {
           <ul className={classes.socialMedia}>
             <a href="/">
               <img className={classes.logo} src={facebook} alt="" />
+
               <h5>Facebook</h5>
             </a>
+
             <a href="/">
               <img className={classes.logo} src={instagram} alt="" />
+
               <h5>Instagram</h5>
             </a>
           </ul>
