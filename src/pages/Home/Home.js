@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classnames from 'clsx'
 import { articleType } from 'utils'
 import ArticleItem from 'containers/ArticleItem'
-import ArticlePage from 'containers/ArticlePage'
+import ArticleList from 'blocks/ArticleList'
 import classes from './Home.module.css'
 
 const Home = React.forwardRef(function Home(props, ref) {
@@ -11,7 +11,7 @@ const Home = React.forwardRef(function Home(props, ref) {
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <ArticlePage />
+      <ArticleList />
 
       <div className={classes.list}>
         {articles.map((article, idx) => (

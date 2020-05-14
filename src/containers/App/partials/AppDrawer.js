@@ -7,16 +7,13 @@ import logo from './burgerLogo.png'
 
 const AppDrawer = React.forwardRef(function AppDrawer(props, ref) {
   const { menu, open, className, ...other } = props
-  console.log(open)
 
   function openNav() {
     document.getElementById('myNav').style.height = '100%'
-    console.log('clicked')
   }
 
   function closeNav() {
     document.getElementById('myNav').style.height = '0%'
-    console.log('clicked')
   }
 
   return (
