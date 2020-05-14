@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 999;
+  flex-shrink: 0;
+  background-color: #fff;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
