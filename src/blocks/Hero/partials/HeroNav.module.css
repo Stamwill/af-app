@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+}
+
+.button {
+  position: center;
+  cursor: pointer;
+  font-size: 0.9vw;
+  font-weight: 600;
+  padding: 0.5vw 1vw;
+  margin: 0.5vw;
+  border: 0;
+  border-radius: 25px;
+  transition: 0.5s;
+  outline: none;
+  background-color: #fff;
+}
+
+.button:hover {
+  background-color: #d90000;
+  color: #fff;
+}
