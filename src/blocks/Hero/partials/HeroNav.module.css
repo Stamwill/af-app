@@ -19,3 +19,9 @@
   background-color: #d90000;
   color: #fff;
 }
+
+@media screen and (max-width: 610px) {
+  .root {
+    display: none;
+  }
+}
