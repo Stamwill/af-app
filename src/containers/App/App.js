@@ -10,23 +10,32 @@ import AppDrawer from './partials/AppDrawer'
 import classes from './App.module.css'
 
 function App() {
-  const isNavMenuOpen = false
+  const [menuIsOpen, setMenuOpen] = React.useState(false)
+
+  const toggleMenu = () => {
+    setMenuOpen((prevState) => !prevState)
+  }
 
   return (
     <div className={classes.root}>
       <AppBar>
         <Toolbar>
-          <AppNav primary={api.menuPrimary} />
+          <AppNav primary={api.menuPrimary} toggleMenu={toggleMenu} />
         </Toolbar>
       </AppBar>
-
       <Hero menu={api.menuPrimary} />
       <Home {...api.startPage} />
       <Footer menus={api.menuPrimary} />
 
-      <AppDrawer open={isNavMenuOpen} menu={api.menuPrimary} />
+      <AppDrawer open={menuIsOpen} menu={api.menuPrimary} />
     </div>
   )
 }
 
 export default App
+
+// App(container) header + children + footer
+//   Pages (home) consists of blocks
+//     blocks
+//       containers
+//         components
