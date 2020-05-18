@@ -58,3 +58,16 @@ a {
   text-decoration: none;
   color: black;
 }
+
+@media screen and (max-width: 960px) {
+  .pageButton {
+    flex: 0;
+  }
+  .button {
+    display: none;
+  }
+  .switchPage {
+    justify-content: center;
+    margin: 0;
+  }
+}
