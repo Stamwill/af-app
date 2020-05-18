@@ -38,7 +38,7 @@ export const startPage = {
       category: 'Products',
       readTime: '5 Minutes read',
       title: 'From the outdoors',
-      text: 'So how does a backpack actually come category? We asked William',
+      text: 'So how does a backpack actually come about? We asked William',
     },
     {
       image: {
@@ -48,7 +48,7 @@ export const startPage = {
       category: 'Nature',
       readTime: '10 Minutes read',
       title: '10 things to do today',
-      text: 'why wait just do it now!',
+      text: 'Why wait just do it now!',
     },
     {
       image: {
