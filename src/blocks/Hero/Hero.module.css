@@ -1,13 +1,13 @@
 .root {
   position: relative;
   height: 65vh;
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2vw;
+  margin-bottom: 15px;
 }
 
 .heading {
@@ -26,4 +26,10 @@
   width: 100%;
   z-index: -1;
   filter: grayscale(80%);
+}
+
+@media screen and (max-width: 960px) {
+  .root {
+    height: 40vh;
+  }
 }

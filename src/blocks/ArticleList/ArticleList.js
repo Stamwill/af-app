@@ -5,7 +5,7 @@ import ArticleListPagination from './partials/ArticleListPagination'
 import classes from './ArticleList.module.css'
 
 const ArticleList = React.forwardRef(function ArticleList(props, ref) {
-  const { className, children, ...other } = props
+  const { className, ...other } = props
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
@@ -15,7 +15,6 @@ const ArticleList = React.forwardRef(function ArticleList(props, ref) {
 })
 
 ArticleList.propTypes = {
-  children: PropTypes.node.isRequired,
   className: PropTypes.string,
 }
 

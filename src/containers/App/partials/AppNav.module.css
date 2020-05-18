@@ -1,4 +1,5 @@
 .root {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
@@ -8,6 +9,7 @@
   display: flex;
   align-items: baseline;
   z-index: 2;
+  justify-content: space-evenly;
 }
 
 .image {
@@ -25,4 +27,10 @@
   border: 1px solid black;
   height: 1vw;
   margin: 1vw 1vw;
+}
+
+@media screen and (max-width: 960px) {
+  .heading {
+    color: white;
+  }
 }

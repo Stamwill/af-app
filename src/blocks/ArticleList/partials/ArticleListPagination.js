@@ -43,9 +43,3 @@ ArticleListPagination.propTypes = {
 ArticleListPagination.uiName = 'ArticleListPagination'
 
 export default ArticleListPagination
-
-// App(container) header + children + footer
-//   Pages (home) consists of blocks
-//     blocks
-//       containers
-//         components
