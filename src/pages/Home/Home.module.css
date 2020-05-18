@@ -1,10 +1,18 @@
 .root {
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 .list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .root {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
