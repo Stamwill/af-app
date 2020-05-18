@@ -19,7 +19,9 @@ const ArticleItem = React.forwardRef(function ArticleItem(props, ref) {
         <p className={classes.readTime}>{article.readTime}</p>
       </div>
 
-      <h2 className={classes.heading}>{article.title}</h2>
+      <h2 className={classes.heading}>
+        <a href="/">{article.title}</a>
+      </h2>
 
       <p className={classes.paragraph}>{article.text}</p>
     </div>
