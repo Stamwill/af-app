@@ -11,7 +11,8 @@
 }
 
 .heading {
-  font-size: 3vw;
+  text-align: center;
+  font-size: 68px;
   color: white;
   margin-bottom: 2vw;
 }
@@ -29,6 +30,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .heading {
+    font-size: 46px;
+  }
   .root {
     height: 40vh;
   }
