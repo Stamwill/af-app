@@ -21,7 +21,7 @@ const AppNav = React.forwardRef(function AppNav(props, ref) {
 
       <div className={classes.container}>
         <Search />
-        <span className={classes.line}> | </span>
+        <span className={classes.line} />
         <Hamburger primary={primary} toggleMenu={toggleMenu} />
       </div>
     </div>

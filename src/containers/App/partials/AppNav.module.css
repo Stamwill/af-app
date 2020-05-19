@@ -19,13 +19,17 @@
 }
 
 .heading {
-  font-size: 1.2vw;
+  font-size: 25px;
   font-weight: 900;
 }
 
 .line {
-  height: 20px;
+  justify-content: flex-end;
+  align-self: flex-end;
+  height: 30px;
+  border: 1px solid black;
   margin: 1vw 1vw;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 960px) {
