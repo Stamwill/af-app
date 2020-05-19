@@ -7,15 +7,15 @@
 
 .container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
+  height: 60px;
   z-index: 2;
-  justify-content: space-evenly;
 }
 
 .image {
   align-self: center;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .heading {
@@ -24,13 +24,22 @@
 }
 
 .line {
-  border: 1px solid black;
-  height: 1vw;
+  height: 20px;
   margin: 1vw 1vw;
 }
 
 @media screen and (max-width: 960px) {
+  .container {
+    height: 60px;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
   .heading {
     color: white;
+  }
+
+  .line {
+    display: none;
   }
 }
