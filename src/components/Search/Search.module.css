@@ -1,19 +1,31 @@
 .root {
   display: flex;
-  justify-content: row;
-  margin-top: 1vw;
+  justify-content: flex-end;
+
+  font-size: 20px;
 }
 
 .logo {
-  width: 1vw;
-  margin-right: 1vw;
+  width: 20px;
+  margin-right: 20px;
 }
 
 .span {
-  height: 1vw;
 }
 
 .search {
   align-items: center;
   text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .logo {
+    width: 20px;
+    height: 20px;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+  .span {
+    display: none;
+  }
 }
