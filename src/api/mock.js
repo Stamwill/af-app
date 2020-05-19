@@ -80,5 +80,36 @@ export const startPage = {
       title: 'From the outdoors',
       text: 'So how does a backpack actually come about? We asked William',
     },
+    {
+      image: {
+        src: '',
+        alt: '',
+      },
+      category: 'Products',
+      readTime: '2 Minutes read',
+      title: 'How to find the perfect trekking trousers',
+      text:
+        'Why are there so many models? The answer is as simple as it is obvious: We’re all different.',
+    },
+    {
+      image: {
+        src: '',
+        alt: '',
+      },
+      category: 'Products',
+      readTime: '5 Minutes read',
+      title: 'From the outdoors',
+      text: 'So how does a backpack actually come about? We asked William',
+    },
+    {
+      image: {
+        src: '',
+        alt: '',
+      },
+      category: 'Nature',
+      readTime: '10 Minutes read',
+      title: '10 things to do today',
+      text: 'Why wait just do it now!',
+    },
   ],
 }
