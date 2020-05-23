@@ -1,7 +1,6 @@
 .root {
   display: flex;
   justify-content: flex-end;
-
   font-size: 20px;
 }
 
@@ -9,9 +8,6 @@
   width: 20px;
   margin-right: 20px;
   cursor: pointer;
-}
-
-.span {
 }
 
 .search {
@@ -35,5 +31,3 @@
     display: none;
   }
 }
-
-/* search is open */
