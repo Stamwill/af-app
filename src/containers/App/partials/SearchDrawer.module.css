@@ -1,0 +1,67 @@
+.root {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f3f3f3;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.searchIsOpen {
+  height: 100%;
+}
+
+.logo {
+  width: 1vw;
+  cursor: pointer;
+}
+
+.content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.input {
+  font-size: 30px;
+  background-color: #f3f3f3;
+  padding-bottom: 15px;
+  width: 35%;
+  border: none;
+  border-bottom: 1px solid #bababa;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.inputButton {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: -30px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
