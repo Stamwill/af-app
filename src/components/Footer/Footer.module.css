@@ -1,35 +1,40 @@
 .root {
   display: flex;
-  justify-content: space-evenly;
-  height: 12vw;
-  margin-top: 5vw;
-  padding-top: 1vw;
+  justify-content: space-around;
+  width: 100%;
+  height: 220px;
+  margin-top: 50px;
+  padding-top: 27px;
   background-color: #e8e7e6;
-  flex: 3;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex: 1;
-  max-width: 40vw;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 .menu {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
+  width: 25%;
+  height: 50%;
   font-weight: 600;
-  padding-bottom: 0.5vw;
-  max-width: 20vw;
 }
 
 .menu:hover {
   color: #d90000;
 }
 
+.label {
+  margin: 5px;
+}
+
 .shop {
-  flex-direction: row;
+  width: 25%;
+  height: 50%;
 }
 
 .shop:hover {
@@ -44,10 +49,101 @@
 
 .socialMedia {
   display: flex;
-  align-self: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  align-self: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.socialMedia a {
+  display: flex;
+  margin: 5px;
+}
+
+.heading {
+  display: flex;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.companyLogo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
 }
 
 .logo {
-  width: 2vw;
-  height: 2vw;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.brand {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+
+@media screen and (max-width: 960px) {
+  .root {
+    margin-top: 0;
+    padding-top: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .brand {
+    display: none;
+  }
+  .container {
+    height: 300px;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+  .menu {
+    width: 33%;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .companyLogo {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .shop {
+    align-items: flex-start;
+  }
+  .socialMedia {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    justify-content: column;
+  }
+  .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .socialMedia {
+  }
+  .menu {
+    padding-left: 10px;
+  }
+  .shop {
+    width: 70%;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: -20px;
+  }
 }

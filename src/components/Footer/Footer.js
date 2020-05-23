@@ -11,42 +11,37 @@ const Footer = React.forwardRef(function Footer(props, ref) {
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <div>
+      <div className={classes.companyLogo}>
         <img src="//source.unsplash.com/50x50?bear" alt="" />
       </div>
 
       <div className={classes.container}>
-        <ul>
-          <div className={classes.menu}>
-            {menus.map((menu, idx) => (
-              <a key={idx} className={classes.menu} href={menu.url}>
-                <span>{menu.label}</span>
-              </a>
-            ))}
-          </div>
+        <ul className={classes.menu}>
+          {menus.map((menu, idx) => (
+            <a key={idx} className={classes.menu} href={menu.url}>
+              <span>{menu.label}</span>
+            </a>
+          ))}
         </ul>
 
         <ul className={classes.shop}>
           <a href="/">shop at af.eu </a>
         </ul>
 
-        <div className={classes.test}>
-          <ul className={classes.socialMedia}>
-            <a href="/">
-              <img className={classes.logo} src={facebook} alt="" />
+        <ul className={classes.socialMedia}>
+          <a href="/">
+            <img className={classes.logo} src={facebook} alt="" />
 
-              <h5>Facebook</h5>
-            </a>
+            <h5 className={classes.heading}>Facebook</h5>
+          </a>
+          <a href="/">
+            <img className={classes.logo} src={instagram} alt="" />
 
-            <a href="/">
-              <img className={classes.logo} src={instagram} alt="" />
-
-              <h5>Instagram</h5>
-            </a>
-          </ul>
-        </div>
+            <h5 className={classes.heading}>Instagram</h5>
+          </a>
+        </ul>
       </div>
-      <div>
+      <div className={classes.brand}>
         <img src="//source.unsplash.com/50x50?bear" alt="" />
       </div>
     </div>
