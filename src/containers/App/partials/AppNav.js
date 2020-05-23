@@ -7,7 +7,7 @@ import Hamburger from 'components/Hamburger'
 import classes from './AppNav.module.css'
 
 const AppNav = React.forwardRef(function AppNav(props, ref) {
-  const { toggleMenu, primary, className, ...other } = props
+  const { toggleSearch, toggleMenu, primary, className, ...other } = props
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
@@ -20,7 +20,7 @@ const AppNav = React.forwardRef(function AppNav(props, ref) {
       </div>
 
       <div className={classes.container}>
-        <Search />
+        <Search toggleSearch={toggleSearch} />
         <span className={classes.line} />
         <Hamburger primary={primary} toggleMenu={toggleMenu} />
       </div>
@@ -30,6 +30,7 @@ const AppNav = React.forwardRef(function AppNav(props, ref) {
 
 AppNav.propTypes = {
   primary: PropTypes.arrayOf(menuLinkType).isRequired,
+  toggleSearch: PropTypes.func,
   toggleMenu: PropTypes.func,
   className: PropTypes.string,
 }
