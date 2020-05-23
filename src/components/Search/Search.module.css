@@ -8,6 +8,7 @@
 .logo {
   width: 20px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .span {
@@ -16,6 +17,11 @@
 .search {
   align-items: center;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.searchIsOpen {
+  height: 100%;
 }
 
 @media screen and (max-width: 960px) {
@@ -29,3 +35,5 @@
     display: none;
   }
 }
+
+/* search is open */
