@@ -3,8 +3,19 @@ import PropTypes from 'prop-types'
 import classnames from 'clsx'
 import classes from './SearchDrawer.module.css'
 
+const toggleScroll = (state = 'auto') => {
+  const body = document.body
+
+  body.style.overflow = state
+}
 const SearchDrawer = React.forwardRef(function SearchDrawer(props, ref) {
   const { open, className, ...other } = props
+
+  if (open) {
+    toggleScroll('hidden')
+  } else {
+    toggleScroll()
+  }
 
   return (
     <div
