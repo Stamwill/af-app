@@ -4,8 +4,19 @@ import PropTypes from 'prop-types'
 import { menuLinkType } from 'utils'
 import classes from './AppDrawer.module.css'
 
+const toggleScroll = (state) => {
+  const body = document.body
+
+  body.style.overflow = state
+}
+
 const AppDrawer = React.forwardRef(function AppDrawer(props, ref) {
   const { menu, open, className, ...other } = props
+  if (open) {
+    toggleScroll('hidden')
+  } else {
+    toggleScroll()
+  }
 
   return (
     <div
