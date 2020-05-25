@@ -2,6 +2,8 @@
   display: flex;
   justify-content: flex-end;
   font-size: 20px;
+  overflow: hidden;
+  margin: 0;
 }
 
 .logo {
