@@ -25,9 +25,9 @@ const AppDrawer = React.forwardRef(function AppDrawer(props, ref) {
       {...other}
     >
       <div className={classes.content}>
-        {menu.map((menu, idx) => (
-          <a className={classes.burgerMenu} key={idx} href={menu.url}>
-            {menu.label}
+        {menu.map((menuItem, idx) => (
+          <a key={idx} className={classes.burgerMenu} href={menuItem.url}>
+            {menuItem.label}
           </a>
         ))}
       </div>
