@@ -20,9 +20,9 @@ const AppAppBar = React.forwardRef(function AppAppBar(props, ref) {
     const currentScrollPos = window.pageYOffset
 
     if (prevScrollPosRef.current > currentScrollPos) {
-      setHidden(true)
-    } else {
       setHidden(false)
+    } else {
+      setHidden(true)
     }
     prevScrollPosRef.current = currentScrollPos
   }, [])

@@ -1,15 +1,16 @@
 .root {
-  height: 0%;
+  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #f3f3f3;
+  display: none;
 }
 
 .searchIsOpen {
-  height: 100%;
+  display: block;
 }
 
 .logo {
