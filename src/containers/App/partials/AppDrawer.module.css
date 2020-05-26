@@ -50,6 +50,11 @@
   color: white;
 }
 
+.toggleNav {
+  color: red;
+  height: 500px;
+}
+
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
