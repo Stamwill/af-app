@@ -1,28 +1,28 @@
 .root {
   display: flex;
-  margin-top: 0.5vw;
+  margin-top: 5px;
   align-items: baseline;
+  justify-content: flex-end;
 }
 
 .pageButton {
-  width: 66%;
-  text-align: end;
-  margin-left: 5vw;
+  width: 45%;
+  text-align: center;
 }
 
 .button {
   justify-content: center;
-  cursor: pointer;
   font-size: 10px;
   font-weight: 600;
-  height: 35px;
-  width: 35px;
-  margin: 0.3vw;
+  height: 30px;
+  width: 30px;
+  margin: 25px 5px 25px 5px;
   padding: 0;
   border: 0px;
   border-radius: 100%;
-  transition: 0.5s;
+  cursor: pointer;
   background-color: white;
+  transition: 0.5s;
 }
 
 .button:hover {
@@ -32,16 +32,16 @@
 
 .switchPage {
   display: flex;
-  justify-content: flex-end;
-  width: 33%;
-  margin-right: 11vw;
+  justify-content: center;
+  width: 15%;
+  margin-right: 13vw;
+  font-size: 12px;
   cursor: pointer;
 }
 
 .previous {
   margin-right: 1vw;
   border-bottom: 1px solid black;
-  transition: 1s;
 }
 
 .next {
@@ -51,7 +51,7 @@
 
 .span {
   align-self: center;
-  font-size: 2vw;
+  font-size: 1vw;
   color: gray;
 }
 
