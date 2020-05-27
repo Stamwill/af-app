@@ -10,9 +10,14 @@
 }
 
 .img {
-  object-fit: cover;
   transition: 0.5s;
+  object-fit: cover;
+  overflow: hidden;
   height: 50%;
+}
+
+.img:hover {
+  transform: scale(1.1);
 }
 
 .articleInfo {
@@ -43,10 +48,6 @@
 
 .heading a:hover {
   color: #d90000;
-}
-
-.img:hover {
-  transform: scale(1.1);
 }
 
 .paragraph {
