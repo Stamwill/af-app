@@ -2,16 +2,17 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 25vw;
+  width: 400px;
   margin: 10px;
-  height: 500px;
-  max-height: 530px;
+
+  height: 550px;
   background-color: white;
 }
 
 .img {
   object-fit: cover;
   transition: 0.5s;
+  height: 50%;
 }
 
 .articleInfo {
@@ -52,6 +53,12 @@
   padding: 0.2vw 0.5vw;
   margin-top: 0;
   font-size: 17px;
+}
+
+@media screen and (max-width: 1460px) {
+  .root {
+    width: 25vw;
+  }
 }
 
 @media screen and (max-width: 960px) {
