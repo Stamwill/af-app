@@ -8,6 +8,14 @@
   background-color: #e8e7e6;
 }
 
+.companyLogo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -41,12 +49,6 @@
   color: #d90000;
 }
 
-.test {
-  display: flex;
-  align-self: flex-end;
-  justify-content: center;
-}
-
 .socialMedia {
   display: flex;
   justify-content: center;
@@ -69,19 +71,12 @@
   padding: 10px;
 }
 
-.companyLogo {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
-  width: 25%;
-}
-
 .logo {
   display: flex;
   width: 30px;
   height: 30px;
 }
+
 .brand {
   display: flex;
   text-align: center;
@@ -92,55 +87,57 @@
 
 @media screen and (max-width: 960px) {
   .root {
+    flex-direction: column;
     margin-top: 0;
     padding-top: 0;
     height: 400px;
-    display: flex;
-    flex-direction: column;
   }
-  .brand {
-    display: none;
-  }
-  .container {
-    height: 300px;
-    margin: 0 auto;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-self: flex-start;
-  }
-  .menu {
-    width: 33%;
-    justify-content: flex-start;
-    padding: 0;
-    padding-left: 10px;
-  }
+
   .companyLogo {
     align-items: center;
     flex-direction: column;
     width: 100%;
   }
+
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: flex-start;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .menu {
+    justify-content: flex-start;
+    width: 33%;
+    padding: 0;
+    padding-left: 10px;
+  }
+
   .shop {
     align-items: flex-start;
   }
+
   .socialMedia {
     align-self: flex-end;
+  }
+
+  .brand {
+    display: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .root {
-    justify-content: column;
-  }
   .container {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .socialMedia {
-  }
+
   .menu {
     padding-left: 10px;
   }
+
   .shop {
     width: 70%;
     height: 30px;

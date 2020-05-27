@@ -3,7 +3,6 @@
 }
 
 .button {
-  cursor: pointer;
   font-size: 15px;
   font-weight: 650;
   padding: 10px 18px;
@@ -11,9 +10,10 @@
   border: 0;
   border-radius: 25px;
   transition: 0.5s;
+  letter-spacing: 0.08em;
   outline: none;
   background-color: #fff;
-  letter-spacing: 0.08em;
+  cursor: pointer;
 }
 
 .button:hover {

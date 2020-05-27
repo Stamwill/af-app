@@ -1,8 +1,8 @@
 .root {
   display: flex;
-  margin-top: 5px;
-  align-items: baseline;
   justify-content: flex-end;
+  align-items: baseline;
+  margin-top: 5px;
 }
 
 .pageButton {
@@ -44,15 +44,15 @@
   border-bottom: 1px solid black;
 }
 
-.next {
-  margin-left: 1vw;
-  border-bottom: 1px solid black;
-}
-
 .span {
   align-self: center;
   font-size: 1vw;
   color: gray;
+}
+
+.next {
+  margin-left: 1vw;
+  border-bottom: 1px solid black;
 }
 
 a {

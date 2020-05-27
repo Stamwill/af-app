@@ -1,12 +1,12 @@
 .root {
+  margin-right: 7vw;
+  margin-left: 7vw;
 }
 
 .list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-right: 7vw;
-  margin-left: 7vw;
 }
 
 @media screen and (max-width: 960px) {

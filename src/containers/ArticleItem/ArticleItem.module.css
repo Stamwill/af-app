@@ -1,19 +1,18 @@
 .root {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   width: 400px;
   margin: 10px;
-
   height: 550px;
   background-color: white;
+  overflow: hidden;
 }
 
 .img {
-  transition: 0.5s;
+  height: 50%;
   object-fit: cover;
   overflow: hidden;
-  height: 50%;
+  transition: 0.5s;
 }
 
 .img:hover {
@@ -64,8 +63,8 @@
 
 @media screen and (max-width: 960px) {
   .root {
-    margin-bottom: 20px;
     width: 98%;
+    margin-bottom: 20px;
     padding-bottom: 20px;
   }
   .image {

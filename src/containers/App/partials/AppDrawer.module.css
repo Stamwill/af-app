@@ -1,13 +1,12 @@
 .root {
+  position: fixed;
   height: 0%;
   width: 100%;
-  position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   background-color: #f3f3f3;
-  background-color: #f3f3f3;
   overflow-y: hidden;
+  z-index: 1;
   transition: 0.5s;
 }
 
@@ -15,31 +14,21 @@
   height: 100%;
 }
 
-.logo {
-  width: 1vw;
-  cursor: pointer;
-}
-
 .content {
   position: relative;
+  text-align: center;
   top: 25%;
   width: 100%;
-  text-align: center;
   margin-top: 30px;
 }
 
 .burgerMenu {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
   display: block;
+  padding: 8px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #818181;
   transition: 0.3s;
-}
-
-.burgerMenu:hover,
-.burgerMenu:focus {
-  color: #f1f1f1;
 }
 
 .close {
@@ -54,12 +43,14 @@
   .overlay {
     overflow-y: auto;
   }
+
   .burgerMenu {
     font-size: 20px;
   }
+
   .closebtn {
-    font-size: 40px;
     top: 15px;
     right: 35px;
+    font-size: 40px;
   }
 }

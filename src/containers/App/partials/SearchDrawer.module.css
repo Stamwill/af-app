@@ -1,12 +1,12 @@
 .root {
+  position: fixed;
+  display: none;
   height: 100%;
   width: 100%;
-  position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
+  z-index: 1;
   background-color: #f3f3f3;
-  display: none;
 }
 
 .searchIsOpen {
@@ -21,19 +21,19 @@
 .content {
   flex-direction: row;
   position: relative;
-  top: 15%;
   text-align: center;
+  top: 15%;
   margin: 5vw;
   margin-top: 30px;
   overflow: hidden;
 }
 
 .input {
-  font-size: 30px;
-  background-color: #f3f3f3;
   padding-bottom: 15px;
   width: 500px;
+  font-size: 30px;
   border: none;
+  background-color: #f3f3f3;
   border-bottom: 1px solid #bababa;
 }
 
@@ -43,8 +43,8 @@
 
 .inputButton {
   font-size: 30px;
-  cursor: pointer;
   margin-left: -30px;
+  cursor: pointer;
 }
 
 .span {
