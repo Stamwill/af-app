@@ -16,10 +16,12 @@ function App() {
 
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState)
+    setSearchOpen(false)
   }
 
   const toggleSearch = () => {
     setSearchOpen((prevState) => !prevState)
+    setMenuOpen(false)
   }
 
   return (
