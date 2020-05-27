@@ -25,7 +25,9 @@ const SearchDrawer = React.forwardRef(function SearchDrawer(props, ref) {
     >
       <div className={classes.content}>
         <header className={classes.heading} />
+
         <input className={classes.input} placeholder="Type to search..." />
+
         <span className={classes.inputButton}> > </span>
       </div>
     </div>
