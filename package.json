@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Stamwill.github.io/af-app",
+  "homepage": "./",
   "name": "arctic-fox",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "[react] build --output public",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
