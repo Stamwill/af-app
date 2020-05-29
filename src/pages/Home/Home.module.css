@@ -1,6 +1,8 @@
 .root {
-  margin-right: 7vw;
-  margin-left: 7vw;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .list {
