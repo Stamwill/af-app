@@ -8,8 +8,10 @@ const ArticleItem = React.forwardRef(function ArticleItem(props, ref) {
   const { className, article, ...other } = props
 
   return (
-    <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <img className={classes.img} src="//source.unsplash.com/407x270?hiking" alt="" />
+    <article className={classnames(classes.root, className)} ref={ref} {...other}>
+      <a className={classes.imgContainer} href="/">
+        <img className={classes.img} src="//source.unsplash.com/407x270?hiking" alt="" />
+      </a>
 
       <div className={classes.articleInfo}>
         <h3 className={classes.category}>{article.category}</h3>
@@ -24,7 +26,7 @@ const ArticleItem = React.forwardRef(function ArticleItem(props, ref) {
       </h2>
 
       <p className={classes.paragraph}>{article.text}</p>
-    </div>
+    </article>
   )
 })
 

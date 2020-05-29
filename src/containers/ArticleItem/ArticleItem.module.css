@@ -1,17 +1,20 @@
 .root {
   display: flex;
   flex-direction: column;
-  width: 380px;
-  margin: 10px;
-  height: 540px;
   background-color: white;
   overflow: hidden;
 }
 
-.img {
-  height: 50%;
-  object-fit: cover;
+.imgContainer {
+  display: block;
   overflow: hidden;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
   transition: 0.5s;
 }
 
@@ -55,26 +58,23 @@
   font-size: 17px;
 }
 
-@media screen and (max-width: 1217px) {
-  .root {
-    width: 30vw;
-  }
-}
-
 @media screen and (max-width: 960px) {
   .root {
     width: 98%;
     height: 400px;
     margin-bottom: 20px;
   }
+
   .image {
     height: 250px;
     width: 100%;
     object-fit: cover;
   }
+
   .heading {
     margin-top: 0;
   }
+
   .paragraph {
     padding-top: 15px;
   }
