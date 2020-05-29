@@ -1,9 +1,9 @@
 .root {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 380px;
   margin: 10px;
-  height: 550px;
+  height: 540px;
   background-color: white;
   overflow: hidden;
 }
@@ -55,27 +55,27 @@
   font-size: 17px;
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1217px) {
   .root {
-    width: 25vw;
+    width: 30vw;
   }
 }
 
 @media screen and (max-width: 960px) {
   .root {
     width: 98%;
+    height: 400px;
     margin-bottom: 20px;
-    padding-bottom: 20px;
   }
   .image {
-    height: 100%;
+    height: 250px;
     width: 100%;
+    object-fit: cover;
   }
   .heading {
     margin-top: 0;
   }
   .paragraph {
     padding-top: 15px;
-    padding-bottom: 100px;
   }
 }
