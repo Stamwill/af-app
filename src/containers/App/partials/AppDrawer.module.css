@@ -31,6 +31,10 @@
   transition: 0.3s;
 }
 
+.burgerMenu:hover {
+  color: red;
+}
+
 .close {
   position: absolute;
   top: 20px;
