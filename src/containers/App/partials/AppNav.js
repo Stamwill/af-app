@@ -16,13 +16,15 @@ const AppNav = React.forwardRef(function AppNav(props, ref) {
       </div>
 
       <div>
-        <h3 className={classes.heading}>Af-App</h3>
+        <h3 className={classes.heading}>Bear Claw</h3>
       </div>
 
       <div className={classes.container}>
         <Search toggleSearch={toggleSearch} />
+
         <span className={classes.line} />
-        <Hamburger primary={primary} toggleMenu={toggleMenu} />
+
+        <Hamburger toggleMenu={toggleMenu} />
       </div>
     </div>
   )
