@@ -27,7 +27,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 25%;
+  width: 50%;
   height: 50%;
   font-weight: 600;
 }
@@ -41,7 +41,7 @@
 }
 
 .shop {
-  width: 25%;
+  width: 50%;
   height: 50%;
 }
 
@@ -110,7 +110,7 @@
 
   .menu {
     justify-content: flex-start;
-    width: 33%;
+    width: 50%;
     padding: 0;
     padding-left: 10px;
   }
@@ -136,6 +136,7 @@
 
   .menu {
     padding-left: 10px;
+    width: 60%;
   }
 
   .shop {
