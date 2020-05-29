@@ -29,16 +29,19 @@ function App() {
       <AppAppBar>
         <Toolbar>
           <AppNav primary={api.menuPrimary} toggleSearch={toggleSearch} toggleMenu={toggleMenu} />
+          <AppDrawer open={menuIsOpen} menu={api.menuPrimary} />
+          <SearchDrawer open={searchIsOpen} />
         </Toolbar>
       </AppAppBar>
 
       <Hero menu={api.menuPrimary} />
-      <Home {...api.startPage} />
-      <Footer menus={api.menuPrimary} />
+      <main className={classes.main}>
+        <Home {...api.startPage} />
+      </main>
 
-      <SearchDrawer open={searchIsOpen} menu={api.menuPrimary} />
-
-      <AppDrawer open={menuIsOpen} menu={api.menuPrimary} />
+      <footer>
+        <Footer menus={api.menuPrimary} />
+      </footer>
     </div>
   )
 }
