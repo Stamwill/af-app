@@ -1,7 +1,6 @@
 import * as React from 'react'
 import * as api from 'api/mock'
 import Home from 'pages/Home'
-import Hero from 'blocks/Hero'
 import Footer from 'components/Footer'
 import Toolbar from 'components/Toolbar'
 import AppAppBar from './partials/AppAppBar'
@@ -34,9 +33,8 @@ function App() {
         </Toolbar>
       </AppAppBar>
 
-      <Hero menu={api.menuPrimary} />
       <main className={classes.main}>
-        <Home {...api.startPage} />
+        <Home {...api.startPage} menu={api.menuPrimary} />
       </main>
 
       <footer>
