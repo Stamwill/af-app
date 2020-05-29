@@ -1,30 +1,24 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import classnames from 'clsx'
-import { articleType } from 'utils'
-import ArticleItem from 'containers/ArticleItem'
+import { articleType, menuLinkType } from 'utils'
 import ArticleList from 'blocks/ArticleList'
-import classes from './Home.module.css'
+import Hero from 'blocks/Hero'
+// import classes from './Home.module.css'
 
-const Home = React.forwardRef(function Home(props, ref) {
-  const { className, articles, ...other } = props
+function Home(props) {
+  const { menu, articles } = props
 
   return (
-    <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <ArticleList />
-
-      <div className={classes.list}>
-        {articles.map((article, idx) => (
-          <ArticleItem key={idx} article={article} />
-        ))}
-      </div>
-    </div>
+    <>
+      <Hero menu={menu} />
+      <ArticleList articles={articles} />
+    </>
   )
-})
+}
 
 Home.propTypes = {
   articles: PropTypes.arrayOf(articleType).isRequired,
-  className: PropTypes.string,
+  menu: PropTypes.arrayOf(menuLinkType).isRequired,
 }
 
 Home.uiName = 'Home'
