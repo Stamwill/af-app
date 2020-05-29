@@ -13,6 +13,7 @@ const ArticleListPagination = React.forwardRef(function ArticleListPagination(pr
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
+      <h2 className={classes.emptyHeading}> </h2>
       <div className={classes.pageButton}>
         {buttons.map((button, idx) => (
           <button key={idx} className={classes.button} type="button" href={button.url}>
@@ -22,15 +23,15 @@ const ArticleListPagination = React.forwardRef(function ArticleListPagination(pr
       </div>
 
       <div className={classes.switchPage}>
-        <a href="/">
-          <p className={classes.previous}>Previous</p>
-        </a>
+        <button className={classes.previous} type="button">
+          Previous
+        </button>
 
         <span className={classes.span}>|</span>
 
-        <a href="/">
-          <p className={classes.next}>Next</p>
-        </a>
+        <button className={classes.next} type="button">
+          Next
+        </button>
       </div>
     </div>
   )
