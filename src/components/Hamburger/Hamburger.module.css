@@ -1,14 +1,15 @@
 .burgerLogo {
   display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 9px;
+  width: 28px;
+  height: 30px;
   cursor: pointer;
+  padding: 5px;
 }
 
 @media screen and (max-width: 960px) {
   .burgerLogo {
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 24px;
+    padding: 0;
   }
 }
