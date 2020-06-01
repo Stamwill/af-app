@@ -11,7 +11,7 @@ const Hero = React.forwardRef(function Hero(props, ref) {
 
   return (
     <Section className={classnames(classes.root, className)} ref={ref} {...other}>
-      <h1 className={classes.heading}>Power of the Bear</h1>
+      <h1 className={classes.heading}>The Northern Spirit</h1>
 
       <img className={classes.background} src="//source.unsplash.com/1080x715?hiking" alt="" />
 
