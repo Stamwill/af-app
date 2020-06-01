@@ -12,7 +12,7 @@ const Footer = React.forwardRef(function Footer(props, ref) {
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
       <div className={classes.companyLogo}>
-        <img src="//source.unsplash.com/50x50?bear" alt="" />
+        <img className={classes.companyImg} src="companyLogo.png" alt="" />
       </div>
 
       <div className={classes.container}>
@@ -42,7 +42,7 @@ const Footer = React.forwardRef(function Footer(props, ref) {
         </ul>
       </div>
       <div className={classes.brand}>
-        <img src="//source.unsplash.com/50x50?bear" alt="" />
+        <img className={classes.companyImg} src="companyLogo.png" alt="" />
       </div>
     </div>
   )
