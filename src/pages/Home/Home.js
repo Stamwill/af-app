@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { articleType, menuLinkType } from 'utils'
 import ArticleList from 'blocks/ArticleList'
 import Hero from 'blocks/Hero'
-// import classes from './Home.module.css'
 
 function Home(props) {
   const { menu, articles } = props
