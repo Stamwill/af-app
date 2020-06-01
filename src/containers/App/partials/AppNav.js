@@ -12,11 +12,11 @@ const AppNav = React.forwardRef(function AppNav(props, ref) {
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
       <div className={classes.image}>
-        <img src="//source.unsplash.com/40x50?bear" alt="" />
+        <img className={classes.logo} src="/companyLogo.png" alt="" />
       </div>
 
       <div>
-        <h3 className={classes.heading}>Bear Claw</h3>
+        <h3 className={classes.heading}>Hiking Spirit</h3>
       </div>
 
       <div className={classes.container}>

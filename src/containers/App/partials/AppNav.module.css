@@ -12,11 +12,15 @@
   align-self: center;
 }
 
+.logo {
+  height: 80px;
+}
+
 .heading {
   display: flex;
   align-items: center;
   font-size: 25px;
-  margin-left: 100px;
+  margin-left: 120px;
   font-weight: 900;
 }
 
