@@ -13,11 +13,6 @@
   display: block;
 }
 
-.logo {
-  width: 1vw;
-  cursor: pointer;
-}
-
 .content {
   flex-direction: row;
   position: relative;
