@@ -13,19 +13,21 @@ const ArticleItem = React.forwardRef(function ArticleItem(props, ref) {
         <img className={classes.img} src="//source.unsplash.com/407x270?hiking" alt="" />
       </a>
 
-      <div className={classes.articleInfo}>
-        <h3 className={classes.category}>{article.category}</h3>
+      <div className={classes.article}>
+        <span className={classes.articleInfo}>
+          <span className={classes.category}>{article.category}</span>
 
-        <span>|</span>
+          <span>|</span>
 
-        <p className={classes.readTime}>{article.readTime}</p>
+          <span className={classes.readTime}>{article.readTime}</span>
+        </span>
+
+        <h2 className={classes.heading}>
+          <a href="/">{article.title}</a>
+        </h2>
+
+        <p className={classes.paragraph}>{article.text}</p>
       </div>
-
-      <h2 className={classes.heading}>
-        <a href="/">{article.title}</a>
-      </h2>
-
-      <p className={classes.paragraph}>{article.text}</p>
     </article>
   )
 })
