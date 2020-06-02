@@ -21,7 +21,9 @@
   align-items: center;
   font-size: 25px;
   margin-left: 100px;
-  font-weight: 900;
+  font-weight: 600;
+  font-family: 'Patua One', cursive;
+  letter-spacing: 0.1em;
 }
 
 .container {
