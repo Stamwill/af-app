@@ -4,6 +4,11 @@
   height: 30px;
   cursor: pointer;
   padding: 5px;
+  border-radius: 50%;
+}
+
+.burgerLogo:hover {
+  background-color: #dddddd;
 }
 
 @media screen and (max-width: 960px) {
