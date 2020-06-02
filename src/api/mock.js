@@ -55,7 +55,7 @@ export const startPage = {
         src: '',
         alt: '',
       },
-      category: 'Guide',
+      category: 'Guides',
       readTime: '5 Minutes read',
       title: 'The importance of leaving a trace',
       text: 'Protect wildlife, stop fired, leave a trace right now!',
