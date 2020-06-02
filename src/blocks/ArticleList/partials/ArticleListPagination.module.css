@@ -74,11 +74,17 @@ a {
 }
 
 @media screen and (max-width: 960px) {
+  .root {
+    display: block;
+  }
+
   .button {
     display: none;
   }
+
   .switchPage {
     justify-content: center;
+    align-content: center;
     width: 100%;
     margin: 0;
   }
