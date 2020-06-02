@@ -53,7 +53,7 @@
   }
 
   .heading {
-    color: white;
+    display: none;
   }
 
   .line {
