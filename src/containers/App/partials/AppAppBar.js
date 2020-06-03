@@ -8,8 +8,7 @@ import AppBar from 'components/AppBar'
 import classes from './AppAppBar.module.css'
 
 const AppAppBar = React.forwardRef(function AppAppBar(props, ref) {
-  const { className, children, ...other } = props
-
+  const { className, open, children, ...other } = props
   const rootRef = React.useRef()
   const handleRef = useForkRef(rootRef, ref)
   const prevScrollPosRef = React.useRef(0)
@@ -41,6 +40,7 @@ const AppAppBar = React.forwardRef(function AppAppBar(props, ref) {
         {
           [classes.hidden]: isHidden,
         },
+        { [classes.searchIsOpen]: open },
         className,
       )}
       ref={handleRef}
@@ -54,6 +54,7 @@ const AppAppBar = React.forwardRef(function AppAppBar(props, ref) {
 AppAppBar.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
+  open: PropTypes.bool,
 }
 
 AppAppBar.uiName = 'AppAppBar'
