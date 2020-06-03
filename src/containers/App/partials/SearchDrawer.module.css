@@ -3,7 +3,7 @@
   display: none;
   height: 100%;
   width: 100%;
-  top: 0;
+  top: 75px;
   left: 0;
   z-index: 1;
   background-color: #f3f3f3;
@@ -11,6 +11,7 @@
 
 .searchIsOpen {
   display: block;
+  opacity: 0.97;
 }
 
 .content {
