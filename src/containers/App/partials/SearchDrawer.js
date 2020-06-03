@@ -4,7 +4,7 @@ import classnames from 'clsx'
 import classes from './SearchDrawer.module.css'
 
 const SearchDrawer = React.forwardRef(function SearchDrawer(props, ref) {
-  const { open, className, ...other } = props
+  const { onToggle, open, className, ...other } = props
 
   const inputRef = React.useRef(null)
 
@@ -14,15 +14,10 @@ const SearchDrawer = React.forwardRef(function SearchDrawer(props, ref) {
     }
   })
 
-  const toggleScroll = (state = 'auto') => {
-    const body = document.body.style
-
-    body.overflow = state
-  }
   if (open) {
-    toggleScroll('hidden')
+    onToggle(true)
   } else {
-    toggleScroll()
+    onToggle()
   }
 
   return (
@@ -46,6 +41,7 @@ const SearchDrawer = React.forwardRef(function SearchDrawer(props, ref) {
 
 SearchDrawer.propTypes = {
   open: PropTypes.bool,
+  onToggle: PropTypes.func,
   className: PropTypes.string,
 }
 
