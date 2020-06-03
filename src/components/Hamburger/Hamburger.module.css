@@ -10,11 +10,3 @@
 .burgerLogo:hover {
   background-color: #dddddd;
 }
-
-@media screen and (max-width: 960px) {
-  .burgerLogo {
-    height: 33px;
-    width: 24px;
-    padding: 0;
-  }
-}
