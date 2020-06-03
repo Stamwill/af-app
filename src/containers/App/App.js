@@ -23,18 +23,25 @@ function App() {
     setMenuOpen(false)
   }
 
+  const togglePadding = (state) => {
+    const body = document.body.style
+
+    if (state) {
+      body.paddingRight = '17px'
+      body.overflow = 'hidden'
+    } else {
+      body.paddingRight = ''
+      body.overflow = 'auto'
+    }
+  }
+
   return (
     <div className={classes.root}>
-      <AppAppBar>
+      <AppAppBar open={searchIsOpen}>
         <Toolbar>
-          <AppNav
-            primary={api.menuPrimary}
-            toggleSearch={toggleSearch}
-            toggleMenu={toggleMenu}
-            open={searchIsOpen}
-          />
+          <AppNav primary={api.menuPrimary} toggleSearch={toggleSearch} toggleMenu={toggleMenu} />
           <AppDrawer open={menuIsOpen} menu={api.menuPrimary} />
-          <SearchDrawer open={searchIsOpen} />
+          <SearchDrawer open={searchIsOpen} onToggle={togglePadding} />
         </Toolbar>
       </AppAppBar>
 
