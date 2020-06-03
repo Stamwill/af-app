@@ -11,7 +11,7 @@
   align-items: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 12px;
+  padding: 5px;
   font-weight: 400;
   letter-spacing: 0.05em;
   font-family: 'Patua One', cursive;
@@ -22,7 +22,9 @@
 }
 
 .logo {
+  align-content: flex-start;
   width: 17px;
+  margin-bottom: 3px;
   cursor: pointer;
 }
 
@@ -31,13 +33,6 @@
 }
 
 @media screen and (max-width: 960px) {
-  .logo {
-    align-items: baseline;
-    justify-content: flex-end;
-    width: 22px;
-    height: 22px;
-  }
-
   .span {
     display: none;
   }
