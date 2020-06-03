@@ -27,7 +27,12 @@ function App() {
     <div className={classes.root}>
       <AppAppBar>
         <Toolbar>
-          <AppNav primary={api.menuPrimary} toggleSearch={toggleSearch} toggleMenu={toggleMenu} />
+          <AppNav
+            primary={api.menuPrimary}
+            toggleSearch={toggleSearch}
+            toggleMenu={toggleMenu}
+            open={searchIsOpen}
+          />
           <AppDrawer open={menuIsOpen} menu={api.menuPrimary} />
           <SearchDrawer open={searchIsOpen} />
         </Toolbar>
