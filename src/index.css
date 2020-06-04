@@ -1,3 +1,12 @@
+:root {
+  --spacing-unit: 9px;
+  --breakpoints-xs: 0px;
+  --breakpoints-sm: 600px;
+  --breakpoints-md: 960px;
+  --breakpoints-lg: 1280px;
+  --breakpoints-xl: 1920px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
@@ -7,9 +16,16 @@ body {
   background-color: #f3f3f3;
 }
 
-button {
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+button {
+  padding: 5px 20px 5px 20px;
+  border-bottom: 1px solid black;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  background-color: inherit;
+  cursor: pointer;
 }
