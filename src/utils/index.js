@@ -1,4 +1,5 @@
 export { default as articleType } from './articleType'
+export { default as capitalize } from './capitalize'
 export { default as cardType } from './cardType'
 export { default as linkType } from './linkType'
 export { default as mediaType } from './mediaType'
