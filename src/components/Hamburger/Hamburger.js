@@ -9,7 +9,9 @@ const Hamburger = React.forwardRef(function Hamburger(props, ref) {
 
   return (
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
-      <img className={classes.burgerLogo} onClick={toggleMenu} src={burgerLogo} alt="" />
+      <button className={classes.button} type="button">
+        <img className={classes.burgerLogo} onClick={toggleMenu} src={burgerLogo} alt="" />
+      </button>
     </div>
   )
 })

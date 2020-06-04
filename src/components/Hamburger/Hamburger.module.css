@@ -1,7 +1,12 @@
+.button {
+  padding-left: 5px;
+  border: none;
+}
+
 .burgerLogo {
   display: flex;
-  width: 28px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   padding: 5px;
   border-radius: 50%;
