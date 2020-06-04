@@ -37,14 +37,6 @@
   cursor: pointer;
 }
 
-.previous {
-  padding: 5px 20px;
-  border-bottom: 1px solid black;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  background-color: #f3f3f3;
-}
 .previous:hover {
   background-color: #f3f3f3;
   color: #d90000;
@@ -55,14 +47,6 @@
   color: gray;
 }
 
-.next {
-  padding: 5px 0px 5px 20px;
-  border-bottom: 1px solid black;
-  border: none;
-  font-weight: 600;
-  background-color: #f3f3f3;
-  cursor: pointer;
-}
 .next:hover {
   background-color: #f3f3f3;
   color: #d90000;
