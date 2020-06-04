@@ -4,6 +4,7 @@ import classnames from 'clsx'
 import { articleType } from 'utils'
 import ArticleItem from 'containers/ArticleItem'
 import Section from 'components/Section'
+import Container from 'components/Container'
 import ArticleListPagination from './partials/ArticleListPagination'
 import classes from './ArticleList.module.css'
 
@@ -12,13 +13,15 @@ const ArticleList = React.forwardRef(function ArticleList(props, ref) {
 
   return (
     <Section className={classnames(classes.root, className)} ref={ref} {...other}>
-      <ArticleListPagination className={classes.pagination} />
+      <Container>
+        <ArticleListPagination className={classes.pagination} />
 
-      <div className={classes.list}>
-        {articles.map((article, idx) => (
-          <ArticleItem key={idx} article={article} />
-        ))}
-      </div>
+        <div className={classes.list}>
+          {articles.map((article, idx) => (
+            <ArticleItem key={idx} article={article} />
+          ))}
+        </div>
+      </Container>
     </Section>
   )
 })

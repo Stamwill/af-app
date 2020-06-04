@@ -1,6 +1,4 @@
 .root {
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .pagination {
@@ -10,13 +8,6 @@
 .list {
   display: grid;
   grid-gap: 20px;
-}
-
-@media (max-width: 1320px) {
-  .root {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 }
 
 @media (min-width: 960px) {
