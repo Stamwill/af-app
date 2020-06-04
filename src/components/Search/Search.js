@@ -11,7 +11,9 @@ const Search = React.forwardRef(function Search(props, ref) {
     <div className={classnames(classes.root, className)} ref={ref} {...other}>
       <div className={classes.search} onClick={toggleSearch}>
         <img className={classes.logo} src={logo} alt="" />
-        <span className={classes.span}>Search</span>
+        <button className={classes.button} type="button">
+          Search
+        </button>
       </div>
     </div>
   )
