@@ -57,9 +57,3 @@ function App() {
 }
 
 export default App
-
-// App(container) header + children + footer
-//   Pages (home) consists of blocks
-//     blocks
-//       containers
-//         components
