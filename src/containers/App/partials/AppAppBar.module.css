@@ -9,3 +9,9 @@
 .searchIsOpen {
   padding-right: 17px;
 }
+
+@media screen and (max-width: 970px) {
+  .searchIsOpen {
+    padding-right: 0;
+  }
+}
