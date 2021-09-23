@@ -55,4 +55,8 @@
   .line {
     display: none;
   }
+
+  .logo {
+    height: 40px;
+  }
 }
