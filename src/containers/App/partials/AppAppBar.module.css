@@ -5,7 +5,3 @@
 .hidden {
   transform: translate3d(0, -100%, 0);
 }
-
-.searchIsOpen {
-  padding-right: 17px;
-}
